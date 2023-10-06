@@ -102,7 +102,7 @@ def main():
   parser.add_argument('filename', help="Exported .json files to convert to obj")
   parser.add_argument('--cooked', action='store_true', dest='cooked', default=True,
                       help="(default) Strip geometry of normals, weld verts, and give single-sided triangles corresponding backfaces.")
-  parser.add_argument('--color', action='store_true',
+  parser.add_argument('--color', action='store_true', default=True, 
                       help="Add vertex color to 'v' and 'vc' elements. WARNING: May produce incompatible .obj files.")
   parser.add_argument('--raw', action='store_false', dest='cooked',
                       help="Emit geometry just as it comes from Tilt Brush. Depending on the brush, triangles may not have backfaces, adjacent triangles will mostly not share verts.")
