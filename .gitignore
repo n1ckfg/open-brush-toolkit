@@ -1,3 +1,4 @@
 *.pyc
 *.DS_Store
 UnitySDK/.idea/.idea.UnitySDK/.idea/*
+*.python-version
